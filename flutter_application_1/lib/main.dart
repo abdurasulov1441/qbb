@@ -10,6 +10,39 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            
+            child: Column(
+              children: [
+            
+            
+            
+            
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+class WelcomeText extends StatelessWidget {
+  const WelcomeText({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(child: Row(
+      children: [
+        Text('Hush kelibsiz!',style: TextStyle(fontFamily: 'Poppins',fontSize: 20),)
+      ],
+    ),);
   }
 }
