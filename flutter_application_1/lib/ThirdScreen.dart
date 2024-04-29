@@ -10,14 +10,14 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255 ,153, 17, 21),
+          backgroundColor: const Color.fromARGB(255 ,153, 17, 21),
           actions: [IconButton(onPressed: (){
             Navigator.pushNamed(context, '/');
-          }, icon: Icon(Icons.exit_to_app,color: Colors.white,))],
+          }, icon: const Icon(Icons.exit_to_app,color: Colors.white,))],
         ),
 
-        drawer: Drawer(
-          backgroundColor: const Color.fromARGB(255, 227, 231, 235),
+        drawer: const Drawer(
+          backgroundColor: Color.fromARGB(255, 227, 231, 235),
           child: SingleChildScrollView(child: Column(children: [
 
 FirsDraweMenu(),
@@ -41,14 +41,14 @@ SecondDrawerMenu(),
            
 TextButton(onPressed: (){
 
-}, child: Container(child: Image.asset('assets/images/map.png',width: 200,height: 200,),),),
+}, child: Image.asset('assets/images/map.png',width: 200,height: 200,),),
 
 
 
-Text('Uyning raqami',style: TextStyle(fontFamily: 'Poppins',fontSize: 30),),
-SizedBox(height: 20,),
+const Text('Uyning raqami',style: TextStyle(fontFamily: 'Poppins',fontSize: 30),),
+const SizedBox(height: 20,),
 
-Buttons(),
+const Buttons(),
 
           
             
@@ -76,16 +76,16 @@ class FirsDraweMenu extends StatelessWidget {
       width: double.infinity,
       height: 250,
       //color: Colors.red,
-      padding: EdgeInsets.only(top: 50,),
+      padding: const EdgeInsets.only(top: 50,),
         child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
 Image.asset('assets/images/logo.png',width: 150,height: 150,),
 
-Text('Qo\'riqlash xizmati'),
+const Text('Qo\'riqlash xizmati'),
 
-Divider(endIndent: 10,indent: 10,)
+const Divider(endIndent: 10,indent: 10,)
 
       ],),
     );
@@ -103,36 +103,36 @@ class SecondDrawerMenu extends StatelessWidget {
       children: [
 
 Container(
-      margin: EdgeInsets.only(left: 10,right: 10,bottom: 10),
+      margin: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
        child: ElevatedButton(onPressed: (){
          Navigator.pushNamed(context, '/second');
-       }, child: Row(children: [
+       }, child: const Row(children: [
         Icon(Icons.home),
         SizedBox(width: 10,),
         Text('Asosiy sahifa'),
        ],)),
      ),
 Container(
-      margin: EdgeInsets.only(left: 10,right: 10,bottom: 10),
-       child: ElevatedButton(onPressed: (){}, child: Row(children: [
+      margin: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
+       child: ElevatedButton(onPressed: (){}, child: const Row(children: [
         Icon(Icons.security),
         SizedBox(width: 10,),
         Text('Qo\'riqqa topshirish'),
        ],)),
      ),
 Container(
-      margin: EdgeInsets.only(left: 10,right: 10,bottom: 10),
+      margin: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
        child: ElevatedButton(onPressed: (){
                Navigator.pushNamed(context, '/third');
-       }, child: Row(children: [
+       }, child: const Row(children: [
         Icon(Icons.call),
         SizedBox(width: 10,),
         Text('Bog\'lanish'),
        ],)),
      ),
 Container(
-      margin: EdgeInsets.only(left: 10,right: 10,bottom: 10),
-       child: ElevatedButton(onPressed: (){}, child: Row(children: [
+      margin: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
+       child: ElevatedButton(onPressed: (){}, child: const Row(children: [
         Icon(Icons.settings),
         SizedBox(width: 10,),
         Text('Sozlamalar'),
@@ -177,7 +177,7 @@ class Buttons extends StatelessWidget {
         child: Container(
       width: 120,
       height: 120,
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -199,7 +199,7 @@ Card(
         child: Container(
       width: 120,
       height: 120,
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -220,7 +220,7 @@ Card(
 
       ],),///////////////////////////////////////////////////////
       
-      SizedBox(height: 20,),
+      const SizedBox(height: 20,),
   
     
 
