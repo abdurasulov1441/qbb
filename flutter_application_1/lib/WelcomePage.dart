@@ -18,11 +18,11 @@ class FirstScreen extends StatelessWidget {
             child: const Column(
               children: [
             
-            WelcomeText(),
-            loginInput(),
-            PasswordInput(),
-            ForgotPass(),
-            FinalSecure(),
+            WelcomeTextOne(),
+            loginInputOne(),
+            PasswordInputOne(),
+            ForgotPassOne(),
+            FinalSecureOne(),
             
             
               ],
@@ -36,8 +36,8 @@ class FirstScreen extends StatelessWidget {
 
 
 
-class WelcomeText extends StatelessWidget {
-  const WelcomeText({super.key});
+class WelcomeTextOne extends StatelessWidget {
+  const WelcomeTextOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -71,8 +71,9 @@ class WelcomeText extends StatelessWidget {
 
 
 
-class loginInput extends StatelessWidget {
-  const loginInput({super.key});
+// ignore: camel_case_types
+class loginInputOne extends StatelessWidget {
+  const loginInputOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -126,8 +127,8 @@ hintText: 'Loginni kiriting'
 
 
 
-class PasswordInput extends StatelessWidget {
-  const PasswordInput({super.key});
+class PasswordInputOne extends StatelessWidget {
+  const PasswordInputOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -182,8 +183,8 @@ obscuringCharacter: '*',
 
 
 
-class ForgotPass extends StatelessWidget {
-  const ForgotPass({super.key});
+class ForgotPassOne extends StatelessWidget {
+  const ForgotPassOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -204,8 +205,8 @@ class ForgotPass extends StatelessWidget {
 
 
 
-class FinalSecure extends StatelessWidget {
-  const FinalSecure({super.key});
+class FinalSecureOne extends StatelessWidget {
+  const FinalSecureOne({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 
 
-class SecondScreen extends StatelessWidget {
-  const SecondScreen({super.key});
-  
+class ThirdScreen extends StatelessWidget {
+  const ThirdScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -39,11 +39,8 @@ SecondDrawerMenu(),
               
               children: [
            
-TextButton(onPressed: (){
 
-}, child: Container(child: Image.asset('assets/images/map.png',width: 200,height: 200,),),),
-
-
+Image.asset('assets/images/house.webp',width: 200,height: 200,),
 
 Text('Uyning raqami',style: TextStyle(fontFamily: 'Poppins',fontSize: 30),),
 SizedBox(height: 20,),
@@ -61,7 +58,6 @@ Buttons(),
       
     );
   }
-
 }
 
 
@@ -123,7 +119,7 @@ Container(
 Container(
       margin: EdgeInsets.only(left: 10,right: 10,bottom: 10),
        child: ElevatedButton(onPressed: (){
-               Navigator.pushNamed(context, '/third');
+         Navigator.pushNamed(context, '/third');        
        }, child: Row(children: [
         Icon(Icons.call),
         SizedBox(width: 10,),
@@ -221,7 +217,39 @@ Card(
       ],),///////////////////////////////////////////////////////
       
       SizedBox(height: 20,),
-  
+    
+Table(
+
+  border: TableBorder.all(), // Adds a border to all cells
+  columnWidths: const <int, TableColumnWidth>{
+    0: FixedColumnWidth(150.0), // fixed to 100.0 width
+    1: FlexColumnWidth(100.0), // automatically adapts to fill the table width
+
+  },
+  children: const [
+    TableRow(
+      
+      children: [
+      Text('Xonadon egasi:'),
+      Text('Abdurasulov A.A'),
+
+    ]),
+    TableRow(children: [
+      Text('So\'ngi martda qo\'riqda:'),
+      Text('17.04.2024'),
+    ]),
+    TableRow(children: [
+      Text('Karta raqami:'),
+      Text('17555'),
+
+    ]),
+    // Add more students and grades here
+  ],
+)
+
+
+
+
     
 
      
